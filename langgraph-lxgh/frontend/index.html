@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+    页面标题 —— 面试可能问：
+    - Q: 为什么用 emoji 作为 favicon？
+    - A: 原型阶段不需要设计 logo，用内联 SVG emoji 零依赖、零请求
+  -->
+  <title>路线规划 — 智能出行助手</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🗺️</text></svg>">
+</head>
+<body>
+  <!--
+    Vue 3 挂载点
+    - SPA（单页应用）模式：整个应用只有一个 HTML 页面，所有内容由 Vue 动态渲染
+    - 区别于 MPA（多页应用）：无需页面刷新即可切换视图
+  -->
+  <div id="app"></div>
+  <!--
+    type="module" 表示使用 ES Module 方式加载
+    - Vite 开发模式下：浏览器直接请求 .vue 文件，Vite 实时编译返回 JS
+    - 生产构建后：打包成一个或多个 chunk，浏览器加载优化后的产物
+  -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

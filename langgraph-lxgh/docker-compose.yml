@@ -1,0 +1,22 @@
+services:
+  app:
+    build: .
+    container_name: route-planner
+    restart: unless-stopped
+    ports:
+      - "8001:8001"
+    environment:
+      - AMAP_KEY=${AMAP_KEY}
+      - AMAP_DRIVING_API_URL=${AMAP_DRIVING_API_URL}
+      - AMAP_BASE_URL=${AMAP_BASE_URL}
+      - DASHSCOPE_API_KEY=${DASHSCOPE_API_KEY}
+      - DASHSCOPE_BASE_URL=${DASHSCOPE_BASE_URL}
+    dns:
+      - 114.114.114.114
+      - 223.5.5.5
+      - 8.8.8.8
+    volumes:
+      - app_data:/app/data
+
+volumes:
+  app_data:

@@ -1,0 +1,4 @@
+image_prompt_path: "backend/prompts/IMAGE_ANALYSIS_PROMPT.txt"
+intent_prompt_path: "backend/prompts/INTENT_PROMPT.txt"
+eval_prompt_path: "backend/prompts/EVAL_PROMPT.txt"
+rewrite_prompt_path: "backend/prompts/REWRITE_PROMPT.txt"

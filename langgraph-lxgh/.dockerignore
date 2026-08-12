@@ -1,0 +1,19 @@
+.venv/
+node_modules/
+__pycache__/
+.git/
+.gitignore
+README.md
+项目逻辑梳理.md
+logs/
+
+# 只排除顶层运行时数据目录，保留 backend/rag/data/（知识库文档）
+/data/
+
+checkpoints.db
+react_checkpoints.db
+multi_agent_checkpoints.db
+*.pyc
+frontend/node_modules/
+frontend/dist/
+.env
